@@ -1,0 +1,17 @@
+:root{
+    --text-color1: #fff4e0;
+    --text-color2: #040505;
+    --main-color: #287a91;
+    --secondary-color: #f99f0a;
+    --alt-color1: #55656d;
+    --alt-color2: #502d54;
+    --background-color:  #242424;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Lexend", sans-serif;
+}
