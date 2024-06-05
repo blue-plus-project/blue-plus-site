@@ -4,7 +4,7 @@
     --main-color: #287a91;
     --secondary-color: #f99f0a;
     --alt-color1: #caeeff;
-    --alt-color2: #302d54;
+    --alt-color2: #2d4c54;
     --background-color:  #121212;
 }
 *{
@@ -23,7 +23,9 @@ body{
 }
 section{
     width: 100%;
-    min-height: 50vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url(/src/assets/background.webp);
 }
 header{
     position: fixed;
@@ -31,7 +33,7 @@ header{
     padding: 4px 40px;
     display: flex;
     color: var(--secondary-color);
-    background-color: var(--alt-color2);
+    z-index: 100;
 }
 .logo{
     width: auto;
@@ -65,4 +67,70 @@ nav li a:hover{
     color: var(--alt-color1);
     border-bottom: 7px solid var(--main-color);
     border-radius: 5px;
+}
+.secao{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+.secao p{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    color: var(--text-color1);
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.secao h3{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    background-image: linear-gradient(120deg, var(--main-color), var(--alt-color1), var(--alt-color2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    text-align: center;
+    font-size: 160px;
+    margin-bottom: 30px;
+}
+.secao img{
+    width: 400px;
+    height: 300px;
+    border-radius: 40px;
+    border: 3px solid var(--alt-color1);
+    filter: grayscale(40%);
+}
+.secao img:hover{
+    cursor: pointer;
+}
+.titulo{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 80px;
+    margin-bottom: 80px;
+}
+#email{
+    width: 550px;
+    height: 40px;
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 2px;
+    font-size: 1rem;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    font-size: 17px;
+    text-decoration: none;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color2);
+    background-color: var(--alt-color2);
 }
