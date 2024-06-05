@@ -3,9 +3,9 @@
     --text-color2: #040505;
     --main-color: #287a91;
     --secondary-color: #f99f0a;
-    --alt-color1: #55656d;
-    --alt-color2: #502d54;
-    --background-color:  #242424;
+    --alt-color1: #caeeff;
+    --alt-color2: #302d54;
+    --background-color:  #121212;
 }
 *{
     margin:0;
@@ -14,4 +14,55 @@
     text-decoration: none;
     list-style: none;
     font-family: "Lexend", sans-serif;
+}
+.main{
+    width: 100%;
+}
+body{
+    background-color: var(--background-color);
+}
+section{
+    width: 100%;
+    min-height: 50vh;
+}
+header{
+    position: fixed;
+    width: 100%;
+    padding: 4px 40px;
+    display: flex;
+    color: var(--secondary-color);
+    background-color: var(--alt-color2);
+}
+.logo{
+    width: auto;
+    height: 90px;
+}
+#btnMob{
+    display: none;
+}
+nav{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap:10px;
+    transition: 0.5s;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+nav li a{
+    margin: 2rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-color1);
+    transition: 0.1s ease;
+}
+nav li a:hover{
+    color: var(--alt-color1);
+    border-bottom: 7px solid var(--main-color);
+    border-radius: 5px;
 }
