@@ -25,7 +25,7 @@ section{
     width: 100%;
     min-height: 100vh;
     background-size: cover;
-    background-image: url(/src/assets/background.webp);
+    background-image: url(./src/assets/background.webp);
 }
 header{
     position: fixed;
@@ -140,6 +140,9 @@ footer{
 }
 
 @media (max-width: 500px){
+    section{
+        min-height: 130vh;
+    }
     #btnMob{
         display: flex;
         padding: 0.5rem 1rem;
@@ -203,12 +206,16 @@ footer{
     .secao h3{
         padding-left: 3rem;
         padding-right: 3rem;
-        font-size: 90px;
+        font-size: 60px;
+    }
+    .secao img{
+        width: 350px;
+        height: 263px;
     }
     .titulo{
         padding-left: 3rem;
         padding-right: 3rem;
-        font-size: 55px;
+        font-size: 45px;
         margin-bottom: 30px;
     }
     #email{
